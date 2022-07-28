@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .sidebar-icon{
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-[#36393F] text-[#3BA55D] hover:bg-[#3BA55D] hover:text-white rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer;
+  }
+
+  .sidebar-tooltip{
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-black text-xs font-bold transition-all duration-100 scale-0 origin-left;
+  }
+  .scrollBar::-webkit-scrollbar{
+    @apply w-2
+  }
+  .scrollBar::-webkit-scrollbar-thumb{
+    @apply w-2 text-black
+  }
+  .scrollBar::-webkit-scrollbar-track {
+    @apply bg-[#2F3136]
+  }
+  .scrollBar::-webkit-scrollbar-thumb {
+    @apply bg-[#202225] rounded-lg
+  }
+}
